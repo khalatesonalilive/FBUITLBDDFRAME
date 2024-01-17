@@ -28,4 +28,9 @@ public class RegisterPageSteps extends BaseClass {
 		RegisterPage.fnameAndLnameFunctionality("Sonali", "Khalate");
 		
 	}
+	
+	@Given("user enters a valid emailid and password")
+	public void user_enters_a_valid_emailid_and_password() {
+		RegisterPage.emailIDAndPass("khalatesonali@gmail.com", "khalatesonali123");
+	}
 }

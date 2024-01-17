@@ -5,3 +5,6 @@ Feature: Test Facebook Application Functionality
 
   Scenario: Test Personal Data
     Given user enters a valid firstname and lastname
+
+  Scenario: Test Personal Data
+    Given user enters a valid emailid and password

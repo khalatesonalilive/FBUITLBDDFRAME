@@ -6,14 +6,20 @@ import org.openqa.selenium.support.PageFactory;
 
 import BaseLayer.BaseClass;
 
-public class RegisterPage extends BaseClass{
+public class RegisterPage extends BaseClass {
 
-	@FindBy(name="firstname")
+	@FindBy(name = "firstname")
 	private WebElement fname;
-	
-	@FindBy(name="lastname")
+
+	@FindBy(name = "lastname")
 	private WebElement lname;
-	
+
+	@FindBy(name = "reg_email__")
+	private WebElement emailId;
+
+	@FindBy(name = "reg_passwd__")
+	private WebElement PassW;
+
 	public RegisterPage() {
 		PageFactory.initElements(driver, this);
 
@@ -24,13 +30,17 @@ public class RegisterPage extends BaseClass{
 		return driver.getCurrentUrl();
 
 	}
-	
-	public void fnameAndLnameFunctionality(String First, String Last)
-	{
+
+	public void fnameAndLnameFunctionality(String First, String Last) {
 		fname.sendKeys(First);
 		lname.sendKeys(Last);
-		
+
 	}
-	
-	
+
+	public void emailIDAndPass(String emailID, String PassWord) {
+		emailId.sendKeys(emailID);
+		PassW.sendKeys(PassWord);
+
+	}
+
 }
