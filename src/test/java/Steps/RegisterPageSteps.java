@@ -33,4 +33,10 @@ public class RegisterPageSteps extends BaseClass {
 	public void user_enters_a_valid_emailid_and_password() {
 		RegisterPage.emailIDAndPass("khalatesonali@gmail.com", "khalatesonali123");
 	}
+	
+	@Given("user enters a valid birthday date, month and year")
+	public void user_enters_a_valid_birthday_date_month_and_year() {
+		RegisterPage.validateDOBFunctionality("14", "Mar", "2000");
+	}
 }
+

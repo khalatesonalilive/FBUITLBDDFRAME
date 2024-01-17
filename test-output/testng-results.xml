@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="2" failed="1" skipped="0">
+<testng-results ignored="0" total="4" passed="3" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-01-17T10:21:05Z" name="Default suite" finished-at="2024-01-17T10:21:06Z" duration-ms="432">
+  <suite started-at="2024-01-17T10:35:10Z" name="Default suite" finished-at="2024-01-17T10:35:10Z" duration-ms="401">
     <groups>
       <group name="cucumber">
         <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestRunner.RunnerTest@7ae42ce3]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2024-01-17T10:21:05Z" name="Default test" finished-at="2024-01-17T10:21:06Z" duration-ms="432">
+    <test started-at="2024-01-17T10:35:10Z" name="Default test" finished-at="2024-01-17T10:35:10Z" duration-ms="401">
       <class name="TestRunner.RunnerTest">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:TestRunner.RunnerTest@7ae42ce3]" started-at="2024-01-17T10:21:05Z" name="setUpClass" finished-at="2024-01-17T10:21:06Z" duration-ms="230" status="PASS">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:TestRunner.RunnerTest@7ae42ce3]" started-at="2024-01-17T10:35:10Z" name="setUpClass" finished-at="2024-01-17T10:35:10Z" duration-ms="193" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@1af1347d]]>
+                <![CDATA[org.testng.TestRunner@20765ed5]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestRunner.RunnerTest@7ae42ce3]" started-at="2024-01-17T10:21:06Z" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-01-17T10:21:06Z" duration-ms="121" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestRunner.RunnerTest@7ae42ce3]" started-at="2024-01-17T10:35:10Z" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-01-17T10:35:10Z" duration-ms="114" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -37,7 +37,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestRunner.RunnerTest@7ae42ce3]" started-at="2024-01-17T10:21:06Z" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-01-17T10:21:06Z" duration-ms="7" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestRunner.RunnerTest@7ae42ce3]" started-at="2024-01-17T10:35:10Z" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-01-17T10:35:10Z" duration-ms="6" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -53,7 +53,23 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestRunner.RunnerTest@7ae42ce3]" started-at="2024-01-17T10:21:06Z" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-01-17T10:21:06Z" duration-ms="44" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestRunner.RunnerTest@7ae42ce3]" started-at="2024-01-17T10:35:10Z" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-01-17T10:35:10Z" duration-ms="6" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Test Personal Data"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Test Facebook Application Functionality"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestRunner.RunnerTest@7ae42ce3]" started-at="2024-01-17T10:35:10Z" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-01-17T10:35:10Z" duration-ms="37" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -68,22 +84,22 @@
           </params>
           <exception class="io.cucumber.testng.UndefinedStepException">
             <message>
-              <![CDATA[The step 'user enters a valid emailid and password' is undefined.
+              <![CDATA[The step 'user enters a valid birthday date, month and year' is undefined.
 You can implement this step using the snippet(s) below:
 
-@Given("user enters a valid emailid and password")
-public void user_enters_a_valid_emailid_and_password() {
+@Given("user enters a valid birthday date, month and year")
+public void user_enters_a_valid_birthday_date_month_and_year() {
     // Write code here that turns the phrase above into concrete actions
     throw new io.cucumber.java.PendingException();
 }
 ]]>
             </message>
             <full-stacktrace>
-              <![CDATA[io.cucumber.testng.UndefinedStepException: The step 'user enters a valid emailid and password' is undefined.
+              <![CDATA[io.cucumber.testng.UndefinedStepException: The step 'user enters a valid birthday date, month and year' is undefined.
 You can implement this step using the snippet(s) below:
 
-@Given("user enters a valid emailid and password")
-public void user_enters_a_valid_emailid_and_password() {
+@Given("user enters a valid birthday date, month and year")
+public void user_enters_a_valid_birthday_date_month_and_year() {
     // Write code here that turns the phrase above into concrete actions
     throw new io.cucumber.java.PendingException();
 }
@@ -127,7 +143,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:TestRunner.RunnerTest@7ae42ce3]" started-at="2024-01-17T10:21:06Z" name="tearDownClass" finished-at="2024-01-17T10:21:06Z" duration-ms="7" status="PASS">
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:TestRunner.RunnerTest@7ae42ce3]" started-at="2024-01-17T10:35:10Z" name="tearDownClass" finished-at="2024-01-17T10:35:10Z" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->

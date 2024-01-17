@@ -8,3 +8,6 @@ Feature: Test Facebook Application Functionality
 
   Scenario: Test Personal Data
     Given user enters a valid emailid and password
+
+  Scenario: Test Personal Data
+    Given user enters a valid birthday date, month and year
